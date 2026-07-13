@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adnash's Store</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    background:linear-gradient(90deg,#ff9800,#ff5722);
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+}
+
+nav{
+    background:#333;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    padding:15px 20px;
+}
+
+nav a:hover{
+    background:#ff9800;
+}
+
+.hero{
+    background:url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1600&q=80") center/cover;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:50px;
+    background:rgba(0,0,0,.5);
+    padding:20px;
+    border-radius:10px;
+}
+
+.section-title{
+    text-align:center;
+    margin:40px 0 20px;
+    color:#333;
+    font-size:32px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 10px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:10px;
+}
+
+.card p{
+    padding:0 10px 10px;
+}
+
+.price{
+    color:#e91e63;
+    font-size:22px;
+    font-weight:bold;
+}
+
+button{
+    width:90%;
+    margin:10px;
+    padding:12px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#2e7d32;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>🛒 Adnash's Store</h1>
+<p>Fresh Bakery • Fruits • Vegetables</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#bakery">Bakery</a>
+<a href="#fruits">Fruits</a>
+<a href="#vegetables">Vegetables</a>
+<a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+<h2>Fresh Food Every Day</h2>
+</div>
+
+<h2 class="section-title" id="bakery">🥐 Bakery Items</h2>
+
+<div class="container">
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4UVo40qhUMhCW5mw80QIend_pAA-OnlQlAUwHc2vuOQ&s=10">
+<h3>mixture</h3>
+<p class="price">₹70.00</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl8SGhUvSJ2tU75G1HKx1vL6sTtzyYii4WkQWB65syrQ&s=10">
+<h3>thakkali nurukku</h3>
+<p class="price">₹200.00</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ3GsNaDYq2iNjYls6YfyawcqBp_SZMYQbK5m_EblHpw&s=10">
+<h3>puffs</h3>
+<p class="price">₹20.00</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVZ5QER3Kd0ILgDSCgv6gL4pYwzeOc5YGM3QoSJRaA3Q&s=10">
+<h3>Donut</h3>
+<p class="price">₹95.00</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+<h2 class="section-title" id="fruits">🍎 Fresh Fruits</h2>
+
+<div class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?auto=format&fit=crop&w=800&q=80">
+<h3>Apple</h3>
+<p class="price">₹90.00/kg</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK6XXgnO-Iovx3td3bKplKDVSB7pNm9QuOxS_TZKcEIw&s=10">
+<h3>Banana</h3>
+<p class="price">₹49/kg</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1547514701-42782101795e?auto=format&fit=crop&w=800&q=80">
+<h3>Orange</h3>
+<p class="price">₹150.00/kg</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWAbNL450Ic_5qFWYtLmg-lojc-MDnsk1ti3W1ucqZDA&s=10">
+<h3>Strawberries</h3>
+<p class="price">₹80.00/box</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+<h2 class="section-title" id="vegetables">🥕 Vegetables</h2>
+
+<div class="container">
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6JZgUr5Mczn2mZQmcZANr4QAO3gn4zEaJJlPYprN7Q&s=10">
+<h3>Carrot</h3>
+<p class="price">₹65.00/kg</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe8aE3OF56ezNSM8sZYegZVdMH47nq1AvvrFsCD6P8pA&s=10">
+<h3>Tomato</h3>
+<p class="price">₹35.00/kg</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRQj-gA0mj2d43PKz-VKhd5LJp5qSM3-8AFsS0Aq11xg&s=10">
+<h3>coliflower</h3>
+<p class="price">₹30.00</p>
+<button>Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj9w2A1hdFIW_qGlKzPIreV22C39cTANwZRxJnVIkTo3LcwIhT5rUQ8BZV9vE6PnoRLf7dS0WIw0q_vAAKcBtdN0RbTn0pIZ-vX1PsH5bi&s=10">
+<h3>Potato</h3>
+<p class="price">₹45.00/kg</p>
+<button>Add to Cart</button>
+</div>
+
+</div>
+
+<footer>
+<h2>Adnash's Store</h2>
+<p>Fresh Bakery, Fruits & Vegetables</p>
+<p>📞 +91 9496202727</p>
+<p>📍 kondotty</p>
+</footer>
+
+</body>
+</html>
